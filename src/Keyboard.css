@@ -1,0 +1,35 @@
+.pendu>.game>.keyboard.playing {
+    width: 100%;
+    height: fit-content;
+    margin: 0 5%;
+    border: 2px solid black;
+}
+.pendu>.game>.keyboard.playing>.row {
+    height: 50%;
+    width: 100%;
+    display: block;
+}
+
+.pendu>.game>.keyboard.playing>.row>.key {
+    width: calc(calc((100%)/13) - 2.4% - 4px);
+    display: inline-block;
+    font-size: 2.5vw;
+    font-family: Menlo, 'Courier New', monospace;
+    text-align: center;
+    padding: 1.2%;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.pendu>.game>.keyboard.playing>.row>.key.visible {
+    background: rgb(194, 194, 194);
+}
+
+.pendu>.game>.keyboard.playing>.row>.key.clicked {
+    background: rgb(87, 87, 87);
+}
+
+.pendu>.game>.keyboard.won,.keyboard.loose {
+    height: 0;
+    width: 0;
+}

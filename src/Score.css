@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:600&display=swap');
+
+.pendu>.black-container>.score {
+    font-size: 2vw;
+    width: 100% - 1px;
+    height: fit-content;
+    margin: 35% 0 65% 0;
+    text-align: center ;
+    font-family: Oxanium, 'Courier New', monospace;
+}
+
+.pendu>.black-container>.score>p {
+    color: #ffffff;
+    text-align: center;
+    padding: 3%;
+}

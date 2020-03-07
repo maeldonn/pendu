@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+
+.pendu>.game>.gameover {
+    width: 100%;
+}
+
+.pendu>.game>.gameover>* {
+    font-family: Bungee, 'Courier New', monospace;
+}
+
+.pendu>.game>.gameover>p {
+    width: 100%;
+    text-align: center;
+    margin: 6% auto 6% auto;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.pendu>.game>.gameover>button {
+    width: 80%;
+    height: 20%;
+    margin: 0 10%;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    border: 3px solid;
+    background-color: darkgray;
+    cursor: pointer;
+}

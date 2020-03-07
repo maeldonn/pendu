@@ -1,0 +1,26 @@
+.pendu {
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+}
+
+.pendu>.black-container {
+  background-color: #000;
+  width: 27%;
+  height: 100%;
+  float: left;
+}
+
+.pendu>.game {
+  width: 46%;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pendu>.game>#canvas {
+  margin: 0 auto;
+  width: 68%;
+  height: 55%;
+}
