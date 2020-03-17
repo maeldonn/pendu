@@ -44,7 +44,7 @@ npm start
 
 ## Règles du jeu
 
-Le but du jeu est de deviner le mot caché. Pour tester une lettre, il suffit de clicker dessus sur le clavier en bas de l'écran. Ci celle-ci appartient au mot, la lettre s'affiche. Sinon, une partie du pendu s'affiche. Attention, la partie est perdue au bout de 10 erreurs. Pour gagner il suffit de deviner l'intégralité des lettres du mot. Amusez-vous bien !
+Le but du jeu est de deviner le mot caché. Pour tester une lettre, il suffit de clicker dessus sur le clavier en bas de l'écran ou de presser une touche de votre clavier. Ci celle-ci appartient au mot, la lettre s'affiche. Sinon, une partie du pendu s'affiche. Attention, la partie est perdue au bout de 10 erreurs. Pour gagner il suffit de deviner l'intégralité des lettres du mot. A la fin de la partie, il suffit d'appuyer sur le bouton recommencer ou sur la barre espace de votre clavier pour rejouer. Amusez-vous bien !
 
 
 ## Navigateurs supportés

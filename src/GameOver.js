@@ -6,7 +6,7 @@ import './GameOver.css';
 const GameOver = ({score, error, result, onClick}) => (
     <div className = "gameover" >
         <p>Vous avez {result === 'won' ? 'gagné' : 'perdu'} en faisant {error} erreurs sur {score} tentatives {result === 'won' ? '👍': '👎'}</p>
-        <button onClick={() => onClick()}>RECOMMENCER</button>
+        <button onClick={() => onClick()}>RECOMMENCER (ESPACE)</button>
     </div>);
 
 GameOver.propTypes = {

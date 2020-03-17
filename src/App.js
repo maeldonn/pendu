@@ -25,7 +25,22 @@ class App extends Component {
   }
 
   // Arrow function for binding
-  // Keyboard click management
+  // Physical keyboard press management
+  handleKeyPress(e) {
+    if((this.gameOver() === 'won') || (this.gameOver() === 'loose')) {
+      if (e.key === ' ') {
+        this.restartGame();
+      }
+    } 
+    else {
+      if ((e.keyCode >= 65) && (e.keyCode <= 90)) {
+        this.handleKeyClick(e.key.toUpperCase());
+      }
+    }
+  }
+
+  // Arrow function for binding
+  // Virtual keyboard click management
   handleKeyClick = (key) => {
     const {matchedKeys, score, error, letter} = this.state;
     if (matchedKeys.includes(key)) this.setState({score: score + 1, error: error + 1});
@@ -40,7 +55,7 @@ class App extends Component {
     return matchedKeys.includes(key) ? 'clicked' : 'visible';
   }
 
-  // Keyboard display management
+  // Word display management
   getFeedbackForLetter(letter) {
     const {matchedKeys} = this.state;
     return matchedKeys.includes(letter.toUpperCase()) ? 'visible' : 'hidden';
@@ -70,7 +85,7 @@ class App extends Component {
 
   // Canvas display management
   refreshCanvas() {
-    const {error} = this.state
+    const {error} = this.state;
     let canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     ctx.fillStyle = 'black';
@@ -119,7 +134,7 @@ class App extends Component {
     const {score, letter, error} = this.state;
     const won = this.gameOver();
     return (
-      <div className="pendu">
+      <div id="app" className="pendu" onKeyUp={(e) => this.handleKeyPress(e)} tabIndex="0">
         <div className="black-container"></div>
         <div className="game">
           <div className="word">
@@ -141,8 +156,7 @@ class App extends Component {
         </div>
         <div className="black-container">
           <Score score={score} error={error} />
-        </div>
-          
+        </div> 
       </div>
     )
   }
